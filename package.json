@@ -1,0 +1,34 @@
+{
+  "name" : "complete",
+  "version" : "0.0.1",
+  "description" : "tab completion for your nodejs CLI program",
+  "main" : "index.js",
+  "directories" : {
+    "lib" : "./lib",
+    "example" : "example"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/hij1nx/complete.git"
+  },
+  "keywords" : [
+    "terminal",
+    "tabs",
+    "unix",
+    "posix",
+    "console",
+    "complete",
+    "completion"
+  ],
+  "author" : {
+    "name" : "hij1nx",
+    "email" : "hij1nx@nodejitsu.com",
+    "url" : "http://www.nodejitsu.com"
+  },
+  "dependencies": {
+    "colors": "0.x.x",
+    "optimist": "0.2.x"
+  },
+  "license" : "MIT",
+  "engine" : { "node" : ">=0.4" }
+}
