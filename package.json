@@ -25,6 +25,9 @@
     "email" : "hij1nx@me.com",
     "url" : "http://www.nodejitsu.com"
   },
+  "maintainers": [
+    { "name": "hij1nx", "email": "hij1nx@me.com" }
+  ],
   "dependencies": {
     "colors": "0.x.x",
     "optimist": "0.2.x"
