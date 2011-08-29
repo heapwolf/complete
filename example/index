@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 
 // Sample proof of concept application for `node-complete`.
+var complete = require('../../complete'); // get the `complete` module.
 
 complete.installed(function(state) {
   if(state === false) {
-    console.log('You have not installed this program. please run `' + process.argv[0] + ' --install`.')
+    console.log('You have not installed this program. please run `' + complete.name + ' --install`.');
   }
 });
-
-complete = require('complete');
 
 //
 // commands

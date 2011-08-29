@@ -1,11 +1,11 @@
 {
   "name" : "complete",
-  "version" : "0.0.1",
+  "version" : "0.1.0",
   "description" : "tab completion for your nodejs CLI program",
-  "main" : "index.js",
+  "main" : "./lib/index.js",
   "directories" : {
     "lib" : "./lib",
-    "example" : "example"
+    "example" : "./example"
   },
   "repository" : {
     "type" : "git",
