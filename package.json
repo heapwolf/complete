@@ -1,6 +1,6 @@
 {
   "name" : "complete",
-  "version" : "0.1.0",
+  "version" : "0.1.1",
   "description" : "tab completion for your nodejs CLI program",
   "main" : "./lib/index.js",
   "directories" : {
