@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-// Sample proof of concept application for `node-complete`.
 var complete = require('../../complete'); // get the `complete` module.
 
 complete.installed(function(state) {
@@ -9,11 +8,7 @@ complete.installed(function(state) {
   }
 });
 
-//
-// commands
-// an array of commands that may be 
-//
-complete.list['apple', 'orange', 'pear', 'lemon', 'mango'];
+complete.list = ['apple', 'orange', 'pear', 'lemon', 'mango'];
 
 //
 // callback({string-data}, {array})
@@ -22,3 +17,5 @@ complete.list['apple', 'orange', 'pear', 'lemon', 'mango'];
 complete.callback = function(userInput, reducedList) {
   // do something if this is an orange.
 };
+
+complete.init();

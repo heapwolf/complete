@@ -30,7 +30,8 @@
   ],
   "dependencies": {
     "colors": "0.x.x",
-    "optimist": "0.2.x"
+    "optimist": "0.2.x",
+    "which": "1.x.x"
   },
   "license" : "MIT",
   "engine" : { "node" : ">=0.4" }
