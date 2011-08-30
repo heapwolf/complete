@@ -2,19 +2,21 @@
 
 ## Using this module.
 
-- Get the module from [NPM][0].
+### Get the module from [NPM][0].
 
 ```
   $npm install complete
 ```
 
-- Require the module.
+### Require the module.
 
 ```javascript
   var complete = require('complete');
 ```
 
-- Your installment procedure should place your CLI program in a location made accessible by the PATH variable. 
+### Install your program.
+
+Your installment procedure should place your CLI program in a location made accessible by the PATH variable. 
 
 On POSIX and Unix-like operating systems, the $PATH variable is specified as a list of one or more directory names separated by colon (:) characters.
 
@@ -36,13 +38,13 @@ The /bin, /usr/bin, and /usr/local/bin directories are typically included in mos
   });
 ```
 
-- Create a list of commands that you want to autocomplete with.
+### Create a list of commands that you want to autocomplete with.
 
 ```javascript
   complete.list = ['apple', 'orange', 'pear', 'lemon', 'mango'];
 ```
 
-- Optionally you can define a callback that will get called when the match when the completion happens.
+### Optionally you can define a callback that will get called when the match when the completion happens.
 
 ```javascript
   complete.callback = function(userInput, reducedList) {
@@ -50,14 +52,14 @@ The /bin, /usr/bin, and /usr/local/bin directories are typically included in mos
   };
 ```
 
-- initialize the auto completion method.
+### initialize the auto completion method.
 
 ```javascript
   complete.init();
 ```
 
-## Is this module stable and ready to work on every system?
-No. This module is in the extremely early prototyping phase. version 1.0 will be a major milestone of stability.
+## Stability
+Is this module stable and ready to work on every system? No. This module is in the extremely early prototyping phase. version 1.0 will be a major milestone of stability.
 
 ## Licence
 
