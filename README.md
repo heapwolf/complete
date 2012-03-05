@@ -1,8 +1,7 @@
 # Synopsis
 Custom command line tab completion for node.js applications.
 
-
-# Usage Example
+# Example
 
 ```javascript
 #!/usr/bin/env node
@@ -29,7 +28,7 @@ complete.init();
 console.log('program started with the following arguments:', process.argv[2] || 'none provided');
 ```
 
-# Getting started
+# Distribution and Installation
 
 Your installment procedure should place your CLI program in a location made accessible by the `PATH` variable. If users install your program with the NPM `-g` option, your program will be in the path.
 
