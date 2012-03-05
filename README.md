@@ -67,7 +67,7 @@ Initialize the auto completion behavior.
 complete.init();
 ```
 
-## Licence
+# Licence
 
 (The MIT License)
 
