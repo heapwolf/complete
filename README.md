@@ -46,7 +46,7 @@ Create a list of commands that you want to autocomplete with.
 complete.list = ['apple', 'orange', 'pear', 'lemon', 'mango'];
 ```
 
-### callback
+## callback
 Optionally you can define a callback that will get called when the match when the completion happens.
 
 ```javascript
@@ -60,7 +60,7 @@ complete.callback = function(lastSelection, userInput, reducedList) {
 };
 ```
 
-### init()
+## init()
 Initialize the auto completion behavior.
 
 ```javascript
