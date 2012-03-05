@@ -1,8 +1,8 @@
 {
   "name" : "complete",
-  "version" : "0.1.1",
+  "version" : "0.2.0",
   "description" : "tab completion for your nodejs CLI program",
-  "main" : "./lib/index.js",
+  "main" : "./lib/complete.js",
   "directories" : {
     "lib" : "./lib",
     "example" : "./example"
@@ -29,8 +29,6 @@
     { "name": "hij1nx", "email": "hij1nx@me.com" }
   ],
   "dependencies": {
-    "colors": "0.x.x",
-    "optimist": "0.2.x",
     "which": "1.x.x"
   },
   "license" : "MIT",
