@@ -1,15 +1,32 @@
-# Custom command line tab completion for node.js applications.
+# Synopsis
+Custom command line tab completion for node.js applications.
 
-## Using this module.
 
-```
-$npm install complete
-```
-
-### Require the module.
+# Usage Example
 
 ```javascript
-var complete = require('complete');
+#!/usr/bin/env node
+
+var complete = require('complete'); // get the `complete` module.
+
+//
+// list of items to complete on.
+//
+complete.list = ['apple', 'orange', 'pear', 'lemon', 'mango'];
+
+complete.callback = function(lastSelection, userInput, reducedList) {
+
+  if (lastSelection === 'apple') {
+	complete.add('sauce');
+  }
+};
+
+complete.init();
+
+//
+// continue with the application...
+//
+console.log('program started with the following arguments:', process.argv[2] || 'none provided');
 ```
 
 ### Install your program.
@@ -20,15 +37,17 @@ Your installment procedure should place your CLI program in a location made acce
 /usr/local/bin/myprogram -> /usr/local/lib/node_modules/myprogram/bin/myprogram
 ```
 
-## API
+# API
 
-### Create a list of commands that you want to autocomplete with.
+## list
+Create a list of commands that you want to autocomplete with.
 
 ```javascript
 complete.list = ['apple', 'orange', 'pear', 'lemon', 'mango'];
 ```
 
-### Optionally you can define a callback that will get called when the match when the completion happens.
+### callback
+Optionally you can define a callback that will get called when the match when the completion happens.
 
 ```javascript
 complete.callback = function(lastSelection, userInput, reducedList) {
@@ -41,7 +60,8 @@ complete.callback = function(lastSelection, userInput, reducedList) {
 };
 ```
 
-### initialize the auto completion method.
+### init()
+Initialize the auto completion behavior.
 
 ```javascript
 complete.init();
