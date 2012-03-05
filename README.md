@@ -22,8 +22,6 @@ Your installment procedure should place your CLI program in a location made acce
 
 ## API
 
-- After you put it in an accessible place, run it with the `--install` option. This will install a series of bash scripts in the `/usr/local/lib/node_scripts/` directory. Optionally, you can then add a script to your CLI program to ensure that it has been `installed`.
-
 ### Create a list of commands that you want to autocomplete with.
 
 ```javascript

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var complete = require('../lib/complete'); // get the `complete` module.
+var complete = require('complete'); // get the `complete` module.
 
 //
 // list of items to complete on.
