@@ -10,7 +10,7 @@ complete.list = ['apple', 'orange', 'pear', 'lemon', 'mango'];
 complete.callback = function(lastSelection, userInput, reducedList) {
 
   if (lastSelection === 'apple') {
-	complete.add('sauce');
+    complete.add(['sauce', 'pie']);
   }
 };
 
