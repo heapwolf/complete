@@ -72,7 +72,7 @@ complete.init();
 ### Your main bin/script
 
 ``` js
-require('completed').setup({
+require('complete').setup({
   // The command-line name of
   // your program. This is the
   // command that will be completed.
@@ -86,18 +86,18 @@ require('completed').setup({
 ### Your completion file
 
 ``` js
-var completed = require('completed');
+var complete = require('complete');
 
-completed({
+complete({
   program: 'my-program',
   // Commands
   commands: {
     'hello': function(words, prev, cur) {
-      completed.output(cur, ['abc', 'def']);
+      complete.output(cur, ['abc', 'def']);
     },
     'world': {
       'hi': function(words, prev, cur) {
-        completed.echo('next');
+        complete.echo('next');
       }
     }
   },
@@ -117,18 +117,18 @@ completed({
 ### All in bin/script
 
 ``` js
-var completed = require('completed');
+var complete = require('complete');
 
-completed({
+complete({
   program: 'my-program',
   // Commands
   commands: {
     'hello': function(words, prev, cur) {
-      completed.output(cur, ['abc', 'def']);
+      complete.output(cur, ['abc', 'def']);
     },
     'world': {
       'hi': function(words, prev, cur) {
-        completed.echo('next');
+        complete.echo('next');
       }
     }
   },
