@@ -28,9 +28,6 @@
   "maintainers": [
     { "name": "hij1nx", "email": "hij1nx@me.com" }
   ],
-  "dependencies": {
-    "which": "1.x.x"
-  },
   "license" : "MIT",
   "engine" : { "node" : ">=0.4" }
 }

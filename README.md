@@ -50,10 +50,10 @@ Optionally you can define a callback that will get called when the match when th
 
 ```javascript
 complete.callback = function(lastSelection, userInput, reducedList) {
-  
+
   //
   // do something if this is an `orange`. Note that anything that
-  // you `process.stdout.write()` will be added to the auto complete 
+  // you `process.stdout.write()` will be added to the auto complete
   // list.
   //
 };
@@ -64,6 +64,94 @@ Initialize the auto completion behavior.
 
 ```javascript
 complete.init();
+```
+
+
+## Higher Level Example
+
+### Your main bin/script
+
+``` js
+require('completed').setup({
+  // The command-line name of
+  // your program. This is the
+  // command that will be completed.
+  program: 'my-program',
+  // Location of your file containing
+  // completion logic and commands.
+  completion: '../lib/completion'
+});
+```
+
+### Your completion file
+
+``` js
+var completed = require('completed');
+
+completed({
+  program: 'my-program',
+  // Commands
+  commands: {
+    'hello': function(words, prev, cur) {
+      completed.output(cur, ['abc', 'def']);
+    },
+    'world': {
+      'hi': function(words, prev, cur) {
+        completed.echo('next');
+      }
+    }
+  },
+  // Position-independent options.
+  // These will attempted to be
+  // matched if `commands` fails
+  // to match.
+  options: {
+    '--help': {},
+    '-h': {},
+    '--version': {},
+    '-v': {}
+  }
+});
+```
+
+### All in bin/script
+
+``` js
+var completed = require('completed');
+
+completed({
+  program: 'my-program',
+  // Commands
+  commands: {
+    'hello': function(words, prev, cur) {
+      completed.output(cur, ['abc', 'def']);
+    },
+    'world': {
+      'hi': function(words, prev, cur) {
+        completed.echo('next');
+      }
+    }
+  },
+  // Position-independent options.
+  // These will attempted to be
+  // matched if `commands` fails
+  // to match.
+  options: {
+    '--help': {},
+    '-h': {},
+    '--version': {},
+    '-v': {}
+  }
+});
+```
+
+## The above results in
+
+``` bash
+$ my-program he<TAB>
+$ my-program hello
+$ my-program hello a<TAB>
+$ my-program hello abc
 ```
 
 # Licence
