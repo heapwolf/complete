@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+/**
+ * High level completion
+ */
+
+var complete = require('complete');
+
+complete({
+  program: 'examplecomp',
+  commands: {
+    apple: {
+      sauce: {},
+      pie: {},
+    },
+    orange: function() {
+      complete.echo('juice');
+    },
+    pear: {},
+    lemon: {},
+    mango: {}
+  },
+  options: {
+    '--version': {},
+    '--help': {}
+  }
+});
+
+console.log('Hello world. This is my app!');
