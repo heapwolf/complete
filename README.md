@@ -107,7 +107,7 @@ $ my-program hello a<TAB>
 $ my-program hello abc
 ```
 
-# Licence
+# License
 
 (The MIT License)
 
