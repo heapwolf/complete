@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/hij1nx/complete.png)](http://travis-ci.org/hij1nx/complete)
 # Synopsis
 Custom command line tab completion for node.js applications.
 
