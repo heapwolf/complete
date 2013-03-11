@@ -11,9 +11,6 @@
     "type" : "git",
     "url" : "http://github.com/hij1nx/complete.git"
   },
-  "scripts": {
-    "install": "./"
-  },
   "dependencies": {
     "optimist": "0.3.5"
   },
