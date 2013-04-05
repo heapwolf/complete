@@ -1,6 +1,6 @@
 {
   "name" : "complete",
-  "version" : "0.4.2",
+  "version" : "0.4.3",
   "description" : "tab completion CLI programs",
   "main" : "./lib/complete.js",
   "directories" : {
