@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'pub' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.30
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/paolofragomeni/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz
+12 verbose folder .
+13 info prepublish complete@0.4.3
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/paolofragomeni/.npm/1f1177db-tar.lock
+16 silly lockFile 06e0f88d-78562-0-2921693944372237-tmp-tgz tar:///var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz
+17 verbose lock tar:///var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz /Users/paolofragomeni/.npm/06e0f88d-78562-0-2921693944372237-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 06e0f88d-78562-0-2921693944372237-tmp-tgz tar:///var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz
+21 silly lockFile 06e0f88d-78562-0-2921693944372237-tmp-tgz tar:///var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz
+22 verbose tar unpack /var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz
+23 silly lockFile 7f9b4398-omeni-npm-complete-0-4-3-package tar:///Users/paolofragomeni/.npm/complete/0.4.3/package
+24 verbose lock tar:///Users/paolofragomeni/.npm/complete/0.4.3/package /Users/paolofragomeni/.npm/7f9b4398-omeni-npm-complete-0-4-3-package.lock
+25 silly lockFile 06e0f88d-78562-0-2921693944372237-tmp-tgz tar:///var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz
+26 verbose lock tar:///var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz /Users/paolofragomeni/.npm/06e0f88d-78562-0-2921693944372237-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry example/package.json
+32 silly gunzTarPerm extractEntry example/bin/exampleapp
+33 silly gunzTarPerm extractEntry example/bin/examplecomp
+34 silly gunzTarPerm extractEntry lib/complete.js
+35 silly lockFile 7f9b4398-omeni-npm-complete-0-4-3-package tar:///Users/paolofragomeni/.npm/complete/0.4.3/package
+36 silly lockFile 7f9b4398-omeni-npm-complete-0-4-3-package tar:///Users/paolofragomeni/.npm/complete/0.4.3/package
+37 silly lockFile 06e0f88d-78562-0-2921693944372237-tmp-tgz tar:///var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz
+38 silly lockFile 06e0f88d-78562-0-2921693944372237-tmp-tgz tar:///var/folders/yg/x4kqg5x97gn75k0sjq_799b00000gn/T/npm-14007-HjJ0yXm3/1409029778562-0.2921693944372237/tmp.tgz
+39 silly lockFile 3a52ce78- .
+40 silly lockFile 3a52ce78- .
+41 silly publish { name: 'complete',
+41 silly publish   version: '0.4.3',
+41 silly publish   description: 'tab completion CLI programs',
+41 silly publish   main: './lib/complete.js',
+41 silly publish   directories: { lib: './lib', example: './example' },
+41 silly publish   repository: { type: 'git', url: 'http://github.com/hij1nx/complete.git' },
+41 silly publish   dependencies: { optimist: '0.3.5' },
+41 silly publish   keywords: [ 'terminal', 'tab', 'unix', 'console', 'complete', 'completion' ],
+41 silly publish   author:
+41 silly publish    { name: 'paolo fragomeni',
+41 silly publish      email: 'paolo@async.ly',
+41 silly publish      url: 'http://async.ly' },
+41 silly publish   maintainers: [ { name: 'paolo fragomeni', email: 'paolo@async.ly' } ],
+41 silly publish   license: 'MIT',
+41 silly publish   engine: { node: '>=0.4' },
+41 silly publish   readme: '# Synopsis\nCustom command line tab completion for node.js applications.\n\n# Example\n\n```javascript\n#!/usr/bin/env node\n\nvar complete = require(\'complete\'); // get the `complete` module.\n\n//\n// list of items to complete on.\n//\ncomplete.list = [\'apple\', \'orange\', \'pear\', \'lemon\', \'mango\'];\n\ncomplete.callback = function(lastSelection, userInput, reducedList) {\n\n  if (lastSelection === \'apple\') {\n\tcomplete.add(\'sauce\');\n  }\n};\n\ncomplete.init();\n\n//\n// continue with the application...\n//\nconsole.log(\'program started with the following arguments:\', process.argv[2] || \'none provided\');\n```\n\n# Distribution and Installation\n\nYour installment procedure should place your CLI program in a location made accessible by the `PATH` variable. If users install your program with the NPM `-g` option, your program will be in the path.\n\n``` bash\n/usr/local/bin/myprogram -> /usr/local/lib/node_modules/myprogram/bin/myprogram\n```\n\n# API\n\n## list\nCreate a list of commands that you want to autocomplete with.\n\n```javascript\ncomplete.list = [\'apple\', \'orange\', \'pear\', \'lemon\', \'mango\'];\n```\n\n## callback\nOptionally you can define a callback that will get called when the match when the completion happens.\n\n```javascript\ncomplete.callback = function(lastSelection, userInput, reducedList) {\n\n  //\n  // do something if this is an `orange`. Note that anything that\n  // you `process.stdout.write()` will be added to the auto complete\n  // list.\n  //\n};\n```\n\n## init()\nInitialize the auto completion behavior.\n\n```javascript\ncomplete.init();\n```\n\n\n## Higher Level Example\n\n``` js\nvar complete = require(\'complete\');\n\ncomplete({\n  program: \'my-program\',\n  // Commands\n  commands: {\n    \'hello\': function(words, prev, cur) {\n      complete.output(cur, [\'abc\', \'def\']);\n    },\n    \'world\': {\n      \'hi\': function(words, prev, cur) {\n        complete.echo(\'next\');\n      }\n    }\n  },\n  // Position-independent options.\n  // These will attempted to be\n  // matched if `commands` fails\n  // to match.\n  options: {\n    \'--help\': {},\n    \'-h\': {},\n    \'--version\': {},\n    \'-v\': {}\n  }\n});\n```\n\n## The above results in\n\n``` bash\n$ my-program he<TAB>\n$ my-program hello\n$ my-program hello a<TAB>\n$ my-program hello abc\n```\n\n# License\n\n(The MIT License)\n\nCopyright (c) 2010 hij1nx <http://www.twitter.com/hij1nx>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \'Software\'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n',
+41 silly publish   readmeFilename: 'README.md',
+41 silly publish   bugs: { url: 'https://github.com/hij1nx/complete/issues' },
+41 silly publish   homepage: 'https://github.com/hij1nx/complete',
+41 silly publish   _id: 'complete@0.4.3',
+41 silly publish   _shasum: '8510f8f28a4c3e870af1437274d6c477300db0c0',
+41 silly publish   _from: '.' }
+42 verbose url raw complete
+43 verbose url resolving [ 'https://registry.npmjs.org/', './complete' ]
+44 verbose url resolved https://registry.npmjs.org/complete
+45 info trying registry request attempt 1 at 01:09:38
+46 http PUT https://registry.npmjs.org/complete
+47 http 403 https://registry.npmjs.org/complete
+48 verbose headers { date: 'Tue, 26 Aug 2014 05:09:38 GMT',
+48 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+48 verbose headers   'content-type': 'application/json',
+48 verbose headers   'cache-control': 'max-age=60',
+48 verbose headers   'content-length': '10225',
+48 verbose headers   'accept-ranges': 'bytes',
+48 verbose headers   via: '1.1 varnish',
+48 verbose headers   'x-served-by': 'cache-jfk1022-JFK',
+48 verbose headers   'x-cache': 'MISS',
+48 verbose headers   'x-cache-hits': '0',
+48 verbose headers   'x-timer': 'S1409029778.594239,VS0,VE403',
+48 verbose headers   'keep-alive': 'timeout=10, max=50',
+48 verbose headers   connection: 'Keep-Alive' }
+49 error publish Failed PUT 403
+50 error Error: forbidden cannot modify pre-existing version: 0.4.3
+50 error old={"name":"complete","version":"0.4.3","description":"tab completion CLI programs","main":"./lib/complete.js","directories":{"lib":"./lib","example":"./example"},"repository":{"type":"git","url":"http://github.com/hij1nx/complete.git"},"dependencies":{"optimist":"0.3.5"},"keywords":["terminal","tab","unix","console","complete","completion"],"author":{"name":"paolo fragomeni","email":"paolo@async.ly","url":"http://async.ly"},"maintainers":[{"name":"hij1nx","email":"hij1nx@me.com"}],"license":"MIT","engine":{"node":">=0.4"},"readme":"# Synopsis\u000aCustom command line tab completion for node.js applications.\u000a\u000a# Example\u000a\u000a```javascript\u000a#!/usr/bin/env node\u000a\u000avar complete = require('complete'); // get the `complete` module.\u000a\u000a//\u000a// list of items to complete on.\u000a//\u000acomplete.list = ['apple', 'orange', 'pear', 'lemon', 'mango'];\u000a\u000acomplete.callback = function(lastSelection, userInput, reducedList) {\u000a\u000a  if (lastSelection === 'apple') {\u000a\u0009complete.add('sauce');\u000a  }\u000a};\u000a\u000acomplete.init();\u000a\u000a//\u000a// continue with the application...\u000a//\u000aconsole.log('program started with the following arguments:', process.argv[2] || 'none provided');\u000a```\u000a\u000a# Distribution and Installation\u000a\u000aYour installment procedure should place your CLI program in a location made accessible by the `PATH` variable. If users install your program with the NPM `-g` option, your program will be in the path.\u000a\u000a``` bash\u000a/usr/local/bin/myprogram -> /usr/local/lib/node_modules/myprogram/bin/myprogram\u000a```\u000a\u000a# API\u000a\u000a## list\u000aCreate a list of commands that you want to autocomplete with.\u000a\u000a```javascript\u000acomplete.list = ['apple', 'orange', 'pear', 'lemon', 'mango'];\u000a```\u000a\u000a## callback\u000aOptionally you can define a callback that will get called when the match when the completion happens.\u000a\u000a```javascript\u000acomplete.callback = function(lastSelection, userInput, reducedList) {\u000a\u000a  //\u000a  // do something if this is an `orange`. Note that anything that\u000a  // you `process.stdout.write()` will be added to the auto complete\u000a  // list.\u000a  //\u000a};\u000a```\u000a\u000a## init()\u000aInitialize the auto completion behavior.\u000a\u000a```javascript\u000acomplete.init();\u000a```\u000a\u000a\u000a## Higher Level Example\u000a\u000a``` js\u000avar complete = require('complete');\u000a\u000acomplete({\u000a  program: 'my-program',\u000a  // Commands\u000a  commands: {\u000a    'hello': function(words, prev, cur) {\u000a      complete.output(cur, ['abc', 'def']);\u000a    },\u000a    'world': {\u000a      'hi': function(words, prev, cur) {\u000a        complete.echo('next');\u000a      }\u000a    }\u000a  },\u000a  // Position-independent options.\u000a  // These will attempted to be\u000a  // matched if `commands` fails\u000a  // to match.\u000a  options: {\u000a    '--help': {},\u000a    '-h': {},\u000a    '--version': {},\u000a    '-v': {}\u000a  }\u000a});\u000a```\u000a\u000a## The above results in\u000a\u000a``` bash\u000a$ my-program he<TAB>\u000a$ my-program hello\u000a$ my-program hello a<TAB>\u000a$ my-program hello abc\u000a```\u000a\u000a# License\u000a\u000a(The MIT License)\u000a\u000aCopyright (c) 2010 hij1nx <http://www.twitter.com/hij1nx>\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\u000a\u000aThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\u000a\u000aTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\u000a\u000a","readmeFilename":"README.md","_id":"complete@0.4.3","dist":{"shasum":"d7ab7cbfbb6552a8c16726c9bb458e136c63c043","tarball":"http://registry.npmjs.org/complete/-/complete-0.4.3.tgz"},"_from":".","_npmVersion":"1.2.15","_npmUser":{"name":"hij1nx","email":"paolo@async.ly"}}
+50 error new={"name":"complete","version":"0.4.3","description":"tab completion CLI programs","main":"./lib/complete.js","directories":{"lib":"./lib","example":"./example"},"repository":{"type":"git","url":"http://github.com/hij1nx/complete.git"},"dependencies":{"optimist":"0.3.5"},"keywords":["terminal","tab","unix","console","complete","completion"],"author":{"name":"paolo fragomeni","email":"paolo@async.ly","url":"http://async.ly"},"maintainers":[{"name":"hij1nx","email":"paolo@async.ly"}],"license":"MIT","engine":{"node":">=0.4"},"readme":"# Synopsis\u000aCustom command line tab completion for node.js applications.\u000a\u000a# Example\u000a\u000a```javascript\u000a#!/usr/bin/env node\u000a\u000avar complete = require('complete'); // get the `complete` module.\u000a\u000a//\u000a// list of items to complete on.\u000a//\u000acomplete.list = ['apple', 'orange', 'pear', 'lemon', 'mango'];\u000a\u000acomplete.callback = function(lastSelection, userInput, reducedList) {\u000a\u000a  if (lastSelection === 'apple') {\u000a\u0009complete.add('sauce');\u000a  }\u000a};\u000a\u000acomplete.init();\u000a\u000a//\u000a// continue with the application...\u000a//\u000aconsole.log('program started with the following arguments:', process.argv[2] || 'none provided');\u000a```\u000a\u000a# Distribution and Installation\u000a\u000aYour installment procedure should place your CLI program in a location made accessible by the `PATH` variable. If users install your program with the NPM `-g` option, your program will be in the path.\u000a\u000a``` bash\u000a/usr/local/bin/myprogram -> /usr/local/lib/node_modules/myprogram/bin/myprogram\u000a```\u000a\u000a# API\u000a\u000a## list\u000aCreate a list of commands that you want to autocomplete with.\u000a\u000a```javascript\u000acomplete.list = ['apple', 'orange', 'pear', 'lemon', 'mango'];\u000a```\u000a\u000a## callback\u000aOptionally you can define a callback that will get called when the match when the completion happens.\u000a\u000a```javascript\u000acomplete.callback = function(lastSelection, userInput, reducedList) {\u000a\u000a  //\u000a  // do something if this is an `orange`. Note that anything that\u000a  // you `process.stdout.write()` will be added to the auto complete\u000a  // list.\u000a  //\u000a};\u000a```\u000a\u000a## init()\u000aInitialize the auto completion behavior.\u000a\u000a```javascript\u000acomplete.init();\u000a```\u000a\u000a\u000a## Higher Level Example\u000a\u000a``` js\u000avar complete = require('complete');\u000a\u000acomplete({\u000a  program: 'my-program',\u000a  // Commands\u000a  commands: {\u000a    'hello': function(words, prev, cur) {\u000a      complete.output(cur, ['abc', 'def']);\u000a    },\u000a    'world': {\u000a      'hi': function(words, prev, cur) {\u000a        complete.echo('next');\u000a      }\u000a    }\u000a  },\u000a  // Position-independent options.\u000a  // These will attempted to be\u000a  // matched if `commands` fails\u000a  // to match.\u000a  options: {\u000a    '--help': {},\u000a    '-h': {},\u000a    '--version': {},\u000a    '-v': {}\u000a  }\u000a});\u000a```\u000a\u000a## The above results in\u000a\u000a``` bash\u000a$ my-program he<TAB>\u000a$ my-program hello\u000a$ my-program hello a<TAB>\u000a$ my-program hello abc\u000a```\u000a\u000a# License\u000a\u000a(The MIT License)\u000a\u000aCopyright (c) 2010 hij1nx <http://www.twitter.com/hij1nx>\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\u000a\u000aThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\u000a\u000aTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\u000a\u000a","readmeFilename":"README.md","bugs":{"url":"https://github.com/hij1nx/complete/issues"},"homepage":"https://github.com/hij1nx/complete","_id":"complete@0.4.3","_shasum":"8510f8f28a4c3e870af1437274d6c477300db0c0","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"hij1nx","email":"paolo@async.ly"},"dist":{"shasum":"8510f8f28a4c3e870af1437274d6c477300db0c0","tarball":"http://registry.npmjs.org/complete/-/complete-0.4.3.tgz"}}: complete
+50 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+50 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+50 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+50 error     at Request.emit (events.js:98:17)
+50 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+50 error     at Request.emit (events.js:117:20)
+50 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+50 error     at IncomingMessage.emit (events.js:117:20)
+50 error     at _stream_readable.js:938:16
+50 error     at process._tickCallback (node.js:419:13)
+51 error If you need help, you may report this *entire* log,
+51 error including the npm and node versions, at:
+51 error     <http://github.com/npm/npm/issues>
+52 error System Darwin 14.0.0
+53 error command "/usr/local/bin/node" "/usr/local/bin/npm" "pub"
+54 error cwd /Users/paolofragomeni/workroot/git/hij1nx/complete
+55 error node -v v0.10.30
+56 error npm -v 1.4.9
+57 verbose exit [ 1, true ]
