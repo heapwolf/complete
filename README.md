@@ -109,12 +109,7 @@ $ my-program hello abc
 
 ## A word about speed optimization
 
-For the completion to work it needs to load the Node.js environment (~100msec),
-execute your custom CLI app logic (>300msec for relative complex apps) and the
-specific `complete` logic, so, for large apps can be a little slow to complete
-the commands if all your app code needs to be executed, so it is a good idea to
-execute the `complete` logic very soon as the app starts and then terminate the
-app. This will result in a speed gain that will be noticeable by users.
+For the completion to work it needs to load the Node.js environment (~100msec), execute your custom CLI app logic (>300msec for relative complex apps) and the specific `complete` logic, so, for large apps can be a little slow to complete the commands if all your app code needs to be executed, so it is a good idea to execute the `complete` logic very soon as the app starts and then terminate the app. This will result in a speed gain that will be noticeable by users.
 
 You can use the following code snippet as a template to it:
 
