@@ -20,6 +20,10 @@ complete({
     lemon: {},
     mango: {}
   },
+  commandOptions: {
+    apple: [ '--cinnamon'],
+    orange: [ '--extra-pulp', '--no-pulp' ]
+  },
   options: {
     '--version': {},
     '--help': {}
