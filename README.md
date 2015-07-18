@@ -107,6 +107,37 @@ $ my-program hello a<TAB>
 $ my-program hello abc
 ```
 
+## A word about speed optimization
+
+For the completion to work it needs to load the Node.js environment (~100msec), execute your custom CLI app logic (>300msec for relative complex apps) and the specific `complete` logic, so, for large apps can be a little slow to complete the commands if all your app code needs to be executed, so it is a good idea to execute the `complete` logic very soon as the app starts and then terminate the app. This will result in a speed gain that will be noticeable by users.
+
+You can use the following code snippet as a template to it:
+
+```js
+#!/usr/bin/env node
+/*
+ * Checks the command line arguments for presence of `compgen` (completion generation)
+ * argument, which is the way `complete` module generates command completion to
+ * be seed to bash.
+ *
+ * If this option is found, then the CLI app will terminate successfully since
+ * no further actions will needed (it was executed only to gather completion info).
+ *
+ * This is an optimization to gain in speed for both completion and command execution
+ * workflows.
+ *
+ */
+if (process.argv.indexOf('--compgen') != -1) {
+  // Load command completions.
+  require('./../lib/completion');
+
+  // Terminate the app successfully.
+  process.exit(0);
+}
+
+// Rest of your CLI app.
+```
+
 # License
 
 (The MIT License)
